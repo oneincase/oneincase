@@ -6,7 +6,7 @@
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1200&color=7AA2F7&center=true&vCenter=true&width=780&height=60&lines=%E6%AD%A3%E5%9C%A8%E6%89%93%E9%80%A0%20WallpaperEM%20%F0%9F%96%BC%EF%B8%8F%E2%9C%A8;Rust%20%F0%9F%A6%80%20%C2%B7%20WebGL%20%F0%9F%8E%A8%20%C2%B7%20Tauri%20%E2%9A%99%EF%B8%8F;Making%20the%20desktop%20fun%20again%20%F0%9F%8C%88;Performance%20obsessive%2C%20pixel%20perfectionist%20%F0%9F%94%8D%E2%9C%A8" alt="Typing SVG" />
 
-<a href="https://github.com/oneincase"><img src="https://komarev.com/ghpvc/?username=oneincase&color=blueviolet&style=flat-square&label=%F0%9F%91%80%20Visitors%20%E2%80%A2%20%E8%AE%BF%E5%AE%A2" alt="visitors" /></a>
+<a href="https://github.com/oneincase"><img src="https://komarev.com/ghpvc/?username=oneincase&color=blueviolet&style=flat-square&label=Visitors%20%E2%80%A2%20%E8%AE%BF%E5%AE%A2" alt="visitors" /></a>
 
 </div>
 
