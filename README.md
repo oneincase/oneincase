@@ -14,6 +14,8 @@
 
 - 🔭 正在打造 **[WallpaperEM](https://github.com/oneincase/WallpaperEM)** —— 极致优雅的全平台桌面壁纸引擎
 - 🔭 Building **[WallpaperEM](https://github.com/oneincase/WallpaperEM)** — a supremely elegant, cross-platform wallpaper engine
+- 🤝 深度参与 **[dsh-wallpaper-engine](https://github.com/elysia395/dsh-wallpaper-engine)** —— 其内置 WebWallGL 渲染引擎与 media-bridge 中间件的作者
+- 🤝 Core contributor to **[dsh-wallpaper-engine](https://github.com/elysia395/dsh-wallpaper-engine)** — author of its built-in WebWallGL renderer and media-bridge middleware
 - 🦀 主力 Rust 🦀，常伴 WebGL 🎨 / Tauri ⚙️ / React ⚛️ / Vue 💚
 - 🦀 Rust by day, with WebGL 🎨 / Tauri ⚙️ / React ⚛️ / Vue 💚 by night
 - 🎨 相信桌面不只是背景，更是表达自我的画布
@@ -24,6 +26,24 @@
 - 🐟 Love eating fish and shipping code — both are super fresh
 
 ## 🌟 旗舰项目 / Flagship Projects
+
+### 🖥️ [dsh-wallpaper-engine](https://github.com/elysia395/dsh-wallpaper-engine) · 🤝 核心贡献者 / Core Contributor
+
+<a href="https://github.com/elysia395/dsh-wallpaper-engine/stargazers"><img src="https://img.shields.io/github/stars/elysia395/dsh-wallpaper-engine?style=flat-square&logo=github&label=%E2%AD%90%20Stars" alt="stars" /></a>
+<img src="https://img.shields.io/badge/npm-dsh--plugin--wallpaper--engine-CB3837?style=flat-square&logo=npm&logoColor=white" alt="npm" />
+<img src="https://img.shields.io/badge/WebGL-990000?style=flat-square&logo=webgl&logoColor=white" alt="WebGL" />
+<img src="https://img.shields.io/badge/%F0%9F%AA%9F%20Windows%20%C2%B7%20macOS%20%C2%B7%20Linux-0078D6?style=flat-square" alt="Windows · macOS · Linux" />
+<img src="https://img.shields.io/badge/License-MIT-green?style=flat-square" alt="MIT License" />
+
+> **把你电脑上的 Wallpaper Engine 壁纸搬进 DSH 网页界面 —— 实时 WebGL 渲染 + iOS 液态玻璃。**
+> **Bring your local Wallpaper Engine wallpapers into the DSH web UI — real-time WebGL rendering with an iOS liquid-glass look.**
+
+- 🎬 **三类壁纸、三条渲染路径** · 场景实时 WebGL 渲染（粒子 / puppet 骨骼 / SceneScript / 音频反应 / 鼠标视差）、网页严格沙箱 + 注入 WE API、视频直接播放 · Scene / Web / Video, three render paths
+- 🪜 **实时优先、逐级降级** · 渲染失败沿降级链自动回退（内嵌 MP4 → 实时抓帧 → 空态），首帧之前不留黑屏 · Real-time first, graceful fallback, never a black frame
+- 🍎 **iOS 液态玻璃界面** · 配色 / 玻璃 / 字体 / 侧栏全可细调，跟随 DSH 界面语言即时切换 · Liquid-glass UI, fully tunable, follows the DSH locale
+- 🔋 **省电与降载** · 遮挡暂停（最小化 / 失焦 / 电池）直接停解码；ffmpeg 帧率上限一次性转码（4K 保留 + AV1）· Occlusion pause + one-shot frame-rate cap
+- 🧩 **能搬的都搬** · 自定义上传 / 自动轮播 / 系统音频频谱与 Now Playing；设置存宿主端，对 agent 零 token 开销 · Uploads, rotation, audio spectrum, host-side settings
+- ❤️ **我与它的关系** · 它内置的实时渲染引擎 [**webwallgl**](https://github.com/oneincase/webwallgl) 与媒体中间件 [**media-bridge**](https://github.com/oneincase/media-bridge) 由我编写 —— 场景 / 网页壁纸的实时渲染与三平台原生媒体链路都建立在它们之上
 
 ### 🖼️ [WallpaperEM](https://github.com/oneincase/WallpaperEM)
 
@@ -53,7 +73,6 @@
 | 📦 项目 / Project | ✨ 简介 / Intro |
 | --- | --- |
 | 🎵 [**media-bridge**](https://github.com/oneincase/media-bridge) | 跨平台「正在播放 + 系统音频频谱 + 媒体控制」中间件，零外部依赖 / Cross-platform Now Playing, audio spectrum & media-control middleware, zero external deps |
-| 🖥️ [**dsh-wallpaper-engine**](https://github.com/oneincase/dsh-wallpaper-engine) | 把 WE 壁纸搬进 DSH 网页界面，WebGL 实时渲染 / Bring WE wallpapers into the DSH web UI, rendered live in WebGL |
 | 🔍 [**utools-polymerization-ocr**](https://github.com/oneincase/utools-polymerization-ocr) | uTools 聚合文字识别插件 / Aggregated OCR plugin for uTools |
 | 🍩 [**DonutLauncher**](https://github.com/oneincase/DonutLauncher) | 圆形甜甜圈启动器 / A circular donut-shaped launcher |
 
