@@ -8,6 +8,12 @@ on:
     branches:
       - main
 
+# One job generates every variant into a single dist/ and pushes once. A matrix
+# would race: each leg gets its own dist/, so the two uploads would overwrite
+# each other on the output branch and only one palette would survive.
+#
+# `color_dots` needs exactly 5 colours: the empty cell, then low -> high contribution.
+# Palettes are cyberpunk: neon-cyan snake over a magenta -> violet -> gold heat ramp.
 jobs:
   generate:
     runs-on: ubuntu-latest
@@ -15,14 +21,14 @@ jobs:
     permissions:
       contents: write
     steps:
-      - name: generate snake.svg
+      - name: generate snake variants
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: oneincase
           outputs: |
-            dist/github-snake.svg
-            dist/github-snake-dark.svg?palette=github-dark
-            dist/github-snake-light.svg?palette=github-light
+            dist/github-snake.svg?color_snake=%2300E5FF&color_dots=%23170A2B,%233B0F5E,%237A1E96,%23D81B7E,%23FFD400
+            dist/github-snake-dark.svg?color_snake=%2300E5FF&color_dots=%23170A2B,%233B0F5E,%237A1E96,%23D81B7E,%23FFD400
+            dist/github-snake-light.svg?color_snake=%230091B3&color_dots=%23EFE7F5,%23D6B8EE,%23B87BE0,%23E0117A,%23B8860B
       - name: push snake.svg to output branch
         uses: crazy-max/ghaction-github-pages@v4
         with:

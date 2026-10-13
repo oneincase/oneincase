@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-label="ONEINCASE — cyberpunk">
+  <title>ONEINCASE // CYBERPUNK</title>
+  <style>
+    .wm{font-family:'SFMono-Regular',ui-monospace,Consolas,'Liberation Mono',Menlo,'Courier New',monospace;font-weight:700;font-size:76px;letter-spacing:.15em;fill:#EAF6FF}
+    .edge{stroke:#00E5FF;stroke-width:1.4}
+    .lbl{font-family:'SFMono-Regular',ui-monospace,Consolas,'Liberation Mono',Menlo,'Courier New',monospace;font-weight:400;font-size:15px;letter-spacing:.42em;fill:#00E5FF}
+    .sub{font-family:'PingFang SC','Hiragino Sans GB','Noto Sans CJK SC','Microsoft YaHei','SFMono-Regular',ui-monospace,Consolas,'Liberation Mono',Menlo,'Courier New',monospace;font-weight:600;font-size:18px;letter-spacing:.14em;fill:#EAF6FF}
+    .meta{font-family:'SFMono-Regular',ui-monospace,Consolas,'Liberation Mono',Menlo,'Courier New',monospace;font-weight:400;font-size:11px;letter-spacing:.30em;fill:#8FA3C8}
+    @keyframes jitter{
+      0%,86%,100%{transform:translate(0,0);opacity:0}
+      87%{transform:translate(-5px,1px);opacity:.85}
+      89%{transform:translate(4px,-2px);opacity:.7}
+      91%{transform:translate(-2px,2px);opacity:.85}
+      93%{transform:translate(0,0);opacity:0}
+    }
+    @keyframes sweep{0%{transform:translateY(-30px)}100%{transform:translateY(390px)}}
+    @keyframes breathe{0%,100%{opacity:.55}50%{opacity:1}}
+    @keyframes scan{0%{background-position-y:0}100%{background-position-y:6px}}
+    .glitch{animation:jitter 5.5s steps(1,end) infinite}
+    .glitch2{animation:jitter 5.5s steps(1,end) .14s infinite}
+    .sweep{animation:sweep 6.5s linear infinite}
+    .blink{animation:breathe 2.4s ease-in-out infinite}
+    .on{animation:breathe 4s ease-in-out infinite}
+    .on2{animation:breathe 4s ease-in-out 2s infinite}
+  </style>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#05010F"/>
+      <stop offset=".55" stop-color="#12032B"/>
+      <stop offset="1" stop-color="#05010F"/>
+    </linearGradient>
+    <radialGradient id="halo" cx=".5" cy=".42" r=".62">
+      <stop offset="0" stop-color="#00E5FF" stop-opacity=".30"/>
+      <stop offset=".5" stop-color="#FF2E97" stop-opacity=".13"/>
+      <stop offset="1" stop-color="#FF2E97" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="gridfade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#00E5FF" stop-opacity="0"/>
+      <stop offset="1" stop-color="#00E5FF" stop-opacity=".55"/>
+    </linearGradient>
+    <radialGradient id="vig" cx=".5" cy=".5" r=".75">
+      <stop offset=".55" stop-color="#000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0.85"/>
+    </radialGradient>
+    <linearGradient id="sweepg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#00E5FF" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#00E5FF" stop-opacity=".16"/>
+      <stop offset="1" stop-color="#00E5FF" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="neon" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="7" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="soft" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+    <clipPath id="frame"><rect x="0" y="0" width="1200" height="360"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="360" fill="url(#bg)"/>
+    <rect width="1200" height="360" fill="url(#halo)"/>
+
+    <g opacity=".5">
+      <g stroke="#00E5FF" stroke-width="1" opacity=".30">
+        <line x1="0" y1="88" x2="1200" y2="88"/>
+        <line x1="0" y1="268" x2="1200" y2="268" stroke-width="1.6" opacity=".8"/>
+      </g>
+      <g stroke="url(#gridfade)" stroke-width="1">
+        <line x1="0" y1="268.0" x2="1200" y2="268.0"/>
+        <line x1="0" y1="269.1" x2="1200" y2="269.1"/>
+        <line x1="0" y1="271.9" x2="1200" y2="271.9"/>
+        <line x1="0" y1="276.3" x2="1200" y2="276.3"/>
+        <line x1="0" y1="282.2" x2="1200" y2="282.2"/>
+        <line x1="0" y1="289.4" x2="1200" y2="289.4"/>
+        <line x1="0" y1="298.0" x2="1200" y2="298.0"/>
+        <line x1="0" y1="307.9" x2="1200" y2="307.9"/>
+        <line x1="0" y1="319.0" x2="1200" y2="319.0"/>
+        <line x1="0" y1="331.5" x2="1200" y2="331.5"/>
+        <line x1="0" y1="345.1" x2="1200" y2="345.1"/>
+        <line x1="0" y1="360.0" x2="1200" y2="360.0"/>
+        <line x1="488.0" y1="268" x2="-1738.0" y2="360"/>
+        <line x1="496.0" y1="268" x2="-1571.0" y2="360"/>
+        <line x1="504.0" y1="268" x2="-1404.0" y2="360"/>
+        <line x1="512.0" y1="268" x2="-1237.0" y2="360"/>
+        <line x1="520.0" y1="268" x2="-1070.0" y2="360"/>
+        <line x1="528.0" y1="268" x2="-903.0" y2="360"/>
+        <line x1="536.0" y1="268" x2="-736.0" y2="360"/>
+        <line x1="544.0" y1="268" x2="-569.0" y2="360"/>
+        <line x1="552.0" y1="268" x2="-402.0" y2="360"/>
+        <line x1="560.0" y1="268" x2="-235.0" y2="360"/>
+        <line x1="568.0" y1="268" x2="-68.0" y2="360"/>
+        <line x1="576.0" y1="268" x2="99.0" y2="360"/>
+        <line x1="584.0" y1="268" x2="266.0" y2="360"/>
+        <line x1="592.0" y1="268" x2="433.0" y2="360"/>
+        <line x1="600.0" y1="268" x2="600.0" y2="360"/>
+        <line x1="608.0" y1="268" x2="767.0" y2="360"/>
+        <line x1="616.0" y1="268" x2="934.0" y2="360"/>
+        <line x1="624.0" y1="268" x2="1101.0" y2="360"/>
+        <line x1="632.0" y1="268" x2="1268.0" y2="360"/>
+        <line x1="640.0" y1="268" x2="1435.0" y2="360"/>
+        <line x1="648.0" y1="268" x2="1602.0" y2="360"/>
+        <line x1="656.0" y1="268" x2="1769.0" y2="360"/>
+        <line x1="664.0" y1="268" x2="1936.0" y2="360"/>
+        <line x1="672.0" y1="268" x2="2103.0" y2="360"/>
+        <line x1="680.0" y1="268" x2="2270.0" y2="360"/>
+        <line x1="688.0" y1="268" x2="2437.0" y2="360"/>
+        <line x1="696.0" y1="268" x2="2604.0" y2="360"/>
+        <line x1="704.0" y1="268" x2="2771.0" y2="360"/>
+        <line x1="712.0" y1="268" x2="2938.0" y2="360"/>
+      </g>
+    </g>
+
+    <!-- side rails -->
+    <rect x="26" y="26" width="6" height="46" fill="#00E5FF"/>
+    <rect x="26" y="288" width="6" height="46" fill="#FF2E97"/>
+    <rect x="1168" y="26" width="6" height="46" fill="#FF2E97"/>
+    <rect x="1168" y="288" width="6" height="46" fill="#00E5FF"/>
+
+    <text class="lbl" x="600" y="72" text-anchor="middle">CYBERPUNK &#183; DESKTOP ENGINEER &#183; RUST &#215; GPU</text>
+
+    <!-- wordmark -->
+    <g text-anchor="middle">
+      <text class="wm glitch" x="600" y="196" fill="#FF2E97" opacity="0">ONEINCASE</text>
+      <text class="wm glitch2" x="600" y="196" fill="#00E5FF" opacity="0">ONEINCASE</text>
+      <g filter="url(#soft)" opacity="0.35">
+        <text class="wm" x="600" y="196" fill="#00E5FF">ONEINCASE</text>
+      </g>
+      <text class="wm edge" x="600" y="196" stroke="#00E5FF" stroke-width="1.4">ONEINCASE</text>
+    </g>
+
+    <rect x="360" y="222" width="480" height="2" fill="#FF2E97" opacity=".85"/>
+    <rect x="470" y="234" width="260" height="2" fill="#00E5FF" opacity=".55"/>
+
+    <text class="sub" x="600" y="272" text-anchor="middle">&#25226;&#26790;&#35013;&#36827;&#26579;&#33394;&#22120; &#183; shipping pixels &amp; shaders</text>
+
+    <text class="meta" x="52" y="332">SYS//PROFILE</text>
+    <text class="meta" x="52" y="332" opacity="0">.</text>
+    <text class="meta" x="248" y="332" fill="#00E5FF">SIGNAL <tspan text-decoration="none">&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;</tspan></text>
+    <text class="meta" x="452" y="332" fill="#39FF8A">GPU <tspan>&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;</tspan></text>
+    <text class="meta" x="620" y="332" fill="#FFD400">LATENCY <tspan>&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;</tspan></text>
+    <text class="meta blink" x="1148" y="332" text-anchor="end" fill="#FF2E97">&#9679; ONLINE</text>
+
+    <!-- corner brackets -->
+    <g stroke="#FF2E97" stroke-width="2" fill="none" opacity=".9">
+      <path d="M14 40 L14 14 L40 14"/>
+      <path d="M1160 14 L1186 14 L1186 40"/>
+    </g>
+    <g stroke="#00E5FF" stroke-width="2" fill="none" opacity=".9">
+      <path d="M14 320 L14 346 L40 346"/>
+      <path d="M1160 346 L1186 346 L1186 320"/>
+    </g>
+
+    <rect class="sweep" x="0" y="-30" width="1200" height="30" fill="url(#sweepg)"/>
+    <rect width="1200" height="360" fill="url(#vig)"/>
+  </g>
+
+  <rect x="1" y="1" width="1198" height="358" fill="none" stroke="#2C1150" stroke-width="2"/>
+</svg>
